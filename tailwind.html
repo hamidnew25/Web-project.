@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamid Hossain | Portfolio</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+  <!-- =============== NAVBAR =============== -->
+  <header class="w-full bg-white/80 backdrop-blur shadow-md fixed top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl md:text-2xl font-bold text-blue-600">Hamid Hossain</a>
+      <nav id="nav-menu" class="hidden md:flex gap-8 text-sm md:text-base font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <!-- Hamburger -->
+      <button id="nav-toggle" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-7 h-7">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <div class="px-6 py-4 flex flex-col gap-3 text-base font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============== HERO =============== -->
+  <section id="hero" class="pt-28 md:pt-32 pb-20 bg-gradient-to-b from-blue-50 to-gray-100">
+    <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-14">
+      <!-- Text -->
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+          Hey, I'm <span class="text-blue-600">Hamid Hossain</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-700 mb-6">Full‑Stack Web Developer crafting exceptional digital experiences.
+        </p>
+        <div class="flex justify-center md:justify-start gap-4">
+          <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-2xl shadow hover:bg-blue-700 transition">Hire Me</a>
+          <a href="assets/Hamid_Hossain_CV.pdf" target="_blank" class="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-2xl shadow hover:bg-blue-600 hover:text-white transition">Download CV</a>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="flex-1 flex justify-center md:justify-end">
+        <img src="https://via.placeholder.com/350" alt="Hamid Hossain" class="w-60 h-60 md:w-80 md:h-80 object-cover rounded-full shadow-2xl" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== ABOUT =============== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <img src="https://via.placeholder.com/500x450" alt="Hamid coding" class="w-full rounded-2xl shadow-lg order-2 md:order-1" loading="lazy" />
+      <div class="order-1 md:order-2">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          I'm a Bangladeshi developer with 5+ years of experience building responsive, user‑centric applications. My stack includes
+          <span class="font-medium">HTML</span>, <span class="font-medium">CSS/Tailwind</span>, <span class="font-medium">JavaScript</span>, and
+          modern frameworks like <span class="font-medium">React</span> & <span class="font-medium">Node.js</span>.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          Beyond coding, I enjoy open‑source contributions, mentoring juniors, and continuously exploring new tech trends.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SKILLS =============== -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Skill Item -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">HTML & CSS</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">JavaScript (ES6+)</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">React & Next.js</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">Node.js & Express</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">MongoDB / SQL</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-lg">
+          <h3 class="text-lg font-semibold mb-2">Tailwind & UI/UX</h3>
+          <div class="w-full bg-gray-200 rounded-full h-3">
+            <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== PROJECTS =============== -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Project Card -->
+        <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-full object-cover group-hover:scale-105 transition" loading="lazy" />
+          </div>
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-semibold mb-2">E‑Commerce Platform</h3>
+            <p class="text-gray-700 mb-4">Full‑stack MERN e‑commerce app with Stripe integration and admin dashboards.</p>
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Demo →</a>
+          </div>
+        </div>
+        <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition" loading="lazy" />
+          </div>
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-semibold mb-2">Task Manager App</h3>
+            <p class="text-gray-700 mb-4">Productivity tool using React, Zustand state management, and Firebase auth.</p>
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Demo →</a>
+          </div>
+        </div>
+        <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full h-full object-cover group-hover:scale-105 transition" loading="lazy" />
+          </div>
+          <div class="p-6 text-left">
+            <h3 class="text-xl font-semibold mb-2">Blog Platform</h3>
+            <p class="text-gray-700 mb-4">Next.js & Tailwind‑powered blog with Markdown support and SEO optimizations.</p>
+            <a href="#" class="text-blue-600 font-medium hover:underline">View Demo →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== TESTIMONIALS =============== -->
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10">Testimonials</h2>
+      <div class="max-w-3xl mx-auto grid grid-cols-1 gap-8">
+        <!-- Testimonial Card -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <p class="text-gray-700 italic mb-4">“Hamid delivered our project ahead of schedule and beyond expectations. His attention to detail is unmatched.”</p>
+          <h4 class="font-semibold">— Sarah Ahmed, CEO at TechWave</h4>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <p class="text-gray-700 italic mb-4">“A pleasure to work with! Hamid transformed our outdated site into a sleek, responsive experience.”</p>
+          <h4 class="font-semibold">— John Williams, Product Lead at DevCorp</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CONTACT =============== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Get In Touch</h2>
+      <div class="max-w-2xl mx-auto">
+        <form action="#" class="grid grid-cols-1 gap-6">
+          <input type="text" placeholder="Name" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-blue-600" required />
+          <input type="email" placeholder="Email" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-blue-600" required />
+          <textarea rows="5" placeholder="Message" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-blue-600" required></textarea>
+          <button type="submit" class="w-full py-4 bg-blue-600 text-white font-semibold rounded-2xl shadow hover:bg-blue-700 transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="https://github.com/hamidhossain" target="_blank" aria-label="GitHub" class="hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path d="M12 0C5.37 0 0 5.37 0 12c
